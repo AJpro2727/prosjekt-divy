@@ -48,7 +48,7 @@ nav {
 
 nav .container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
@@ -162,4 +162,45 @@ nav .container {
 }
 .grid-4 {
   display: grid;
+  grid-template-columns: repeat(7, 70px);
+  gap: 10px;
+  justify-content: center;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 1rem;
+  background: #1f4aa8;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+.cell {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #dbe4ff;
+  border: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.cell.player-1 {
+  background-color: #e63946;
+}
+
+.cell.player-2 {
+  background-color: #f4d35e;
+}
+
+.status-box {
+  width: fit-content;
+  min-width: 260px;
+  max-width: 90%;
+  margin: 1rem auto 0;
+  padding: 0.85rem 1.4rem;
+  text-align: center;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text-main);
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 14px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
 }
